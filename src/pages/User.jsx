@@ -8,11 +8,12 @@ export const User = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
-  const clients = ['Client A'];
+  const clients = ['Client A', 'Client B', 'Client C'];
 
   const handleSubmit = () => {
-    if (selectedClient === 'Client A') {
-      navigate('/user/viewclientA');
+    if (selectedClient) {
+      const clientRoute = selectedClient.toLowerCase().replace(' ', '');
+      navigate(`/user/view${clientRoute}`);
     }
   };
 
