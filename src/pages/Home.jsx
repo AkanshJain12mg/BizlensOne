@@ -16,7 +16,7 @@ export const Home = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-           We empower retailers, brands, and local businesses with smart QR-based solutions that simplify product tracking, enhance customer engagement, and unlock real-time insights. With a focus on accessibility and efficiency, BizLens bridges the gap between physical products and digital experiences—helping businesses scale smarter, serve better, and stay ahead in a fast-moving market.
+           We empower retailers, brands, and local businesses with smart solutions that simplify product tracking, enhance customer engagement, and unlock real-time insights. With a focus on accessibility and efficiency, BizLens bridges the gap between physical products and digital experiences—helping businesses scale smarter, serve better, and stay ahead in a fast-moving market.
           </p>
         </div>
 

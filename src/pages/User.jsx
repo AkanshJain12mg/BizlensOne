@@ -8,7 +8,7 @@ export const User = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
-  const clients = ['Client A', 'Client B', 'Client C'];
+  const clients = ['ByeWind' , "ThreadUp" , "Mounji"]
 
   const handleSubmit = () => {
     if (selectedClient) {
@@ -77,7 +77,7 @@ export const User = () => {
                   : 'bg-gray-400 cursor-not-allowed'
               }`}
             >
-              View Dashboard
+              View Preview
             </button>
           </div>
         </div>

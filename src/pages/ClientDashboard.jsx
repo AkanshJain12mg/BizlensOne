@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Layout } from '../components/Layout';
+import resultImage from '../sendresultimage.jpeg';
 
 export const ClientDashboard = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const ClientDashboard = () => {
             Analysis Results
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Your data analysis is complete. Here are the results:
+            Your data analysis is complete. Results will be now reflecting to your customer
           </p>
         </div>
 
@@ -25,7 +26,7 @@ export const ClientDashboard = () => {
           <div className="p-8">
             <div className="aspect-video bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src = {resultImage}
                 alt="Data Analysis Results"
                 className="w-full h-full object-cover"
               />
@@ -35,8 +36,7 @@ export const ClientDashboard = () => {
                 Analysis Summary
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. The analysis reveals key insights 
+              The analysis reveals key insights 
                 about your data patterns and trends.
               </p>
             </div>

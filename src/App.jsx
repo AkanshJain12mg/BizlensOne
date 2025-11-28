@@ -17,9 +17,9 @@ function App() {
             <Route path="/client" element={<Client />} />
             <Route path="/client/dashboard" element={<ClientDashboard />} />
             <Route path="/user" element={<User />} />
-            <Route path="/user/viewclienta" element={<UserClientView clientId="A" />} />
-            <Route path="/user/viewclientb" element={<UserClientView clientId="B" />} />
-            <Route path="/user/viewclientc" element={<UserClientView clientId="C" />} />
+            <Route path="/user/viewbyewind" element={<UserClientView clientId="ByeWind" />} />
+            <Route path="/user/viewthreadup" element={<UserClientView clientId="ThreadUp" />} />
+            <Route path="/user/viewmounji" element={<UserClientView clientId="Mounji" />} />
           </Routes>
         </div>
       </Router>

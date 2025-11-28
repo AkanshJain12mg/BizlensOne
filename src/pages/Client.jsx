@@ -120,7 +120,7 @@ export const Client = () => {
                   : 'bg-gray-400 cursor-not-allowed'
               }`}
             >
-              Show Results
+              Send Results
             </button>
           </div>
         </div>
