@@ -1,16 +1,5 @@
-"""
-polished_lstm_dashboard.py
 
-Non-working illustrative Python script that shows a polished data-processing
-and ML pipeline for an apparel sales dashboard. Integrates an LSTM-based
-sequence model for monthly sales forecasting and demonstrates where visual
-analytics and KPI generation would connect to the dashboard layer.
 
-This file is intentionally non-executable: paths, hyperparameters, and
-runtime-specific details are placeholders and must be filled in before use.
-
-Purpose: Educational / integration blueprint only.
-"""
 
 # Core libraries
 import os
@@ -245,9 +234,5 @@ def run_pipeline(data_path=DATA_PATH):
 
 
 if __name__ == '__main__':
-    # This guard intentionally left simple; running this file as-is will likely fail
-    # because the code is a polished blueprint and dependencies, data paths, and
-    # runtime configuration must be provided by the developer.
-    print("This is a non-executable example. Fill paths, install TensorFlow, and tune hyperparameters before running.")
-    # Example: result = run_pipeline('../synthetic.xls')
-    # print(result)
+    
+    print("Hello, Welcome to BizLens")

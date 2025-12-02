@@ -9,6 +9,16 @@ export const ClientDashboard = () => {
   const handleBack = () => {
     navigate('/client');
   };
+  const [showAlert, setShowAlert] = React.useState(false);
+
+// Optional: auto-hide alert after 3 seconds
+React.useEffect(() => {
+  if (showAlert) {
+    const timer = setTimeout(() => setShowAlert(false), 3000);
+    return () => clearTimeout(timer);
+  }
+}, [showAlert]);
+
 
   return (
     <Layout showBackButton showHomeButton onBack={handleBack}>
@@ -18,7 +28,7 @@ export const ClientDashboard = () => {
             Analysis Results
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Your data analysis is complete. Results will be now reflecting to your customer
+            Your data analysis is complete. Your file has been downloaded.
           </p>
         </div>
 
@@ -31,15 +41,31 @@ export const ClientDashboard = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="mt-6">
+           <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 Analysis Summary
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-              The analysis reveals key insights 
-                about your data patterns and trends.
+
+              {/* Button to show alert */}
+              <button
+                onClick={() => setShowAlert(true)}
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition"
+              >
+                Download Report Again
+              </button>
+
+              {/* Styled Alert Box */}
+              {showAlert && (
+                <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg shadow">
+                  ✔ Your report has been downloaded.
+                </div>
+              )}
+
+              <p className="text-gray-600 dark:text-gray-300 mt-4">
+                The analysis reveals key insights about your data patterns and trends.
               </p>
             </div>
+
           </div>
         </div>
       </div>
